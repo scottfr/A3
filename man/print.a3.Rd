@@ -1,0 +1,20 @@
+\name{print.A3}
+\alias{print.A3}
+\title{Print Fit Results}
+\usage{
+  \method{print}{A3} (x, ...)
+}
+\arguments{
+  \item{x}{an A3 object.}
+
+  \item{...}{additional arguments passed to the
+  \code{\link{print}} function.}
+}
+\description{
+  Prints an 'A3' object results table.
+}
+\examples{
+x <- a3.lm(rating ~ ., attitude, p.acc = NULL)
+ print(x)
+}
+

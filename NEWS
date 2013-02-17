@@ -1,0 +1,7 @@
+2012-02-06 version 0.9.1
+
+* Added \donttest{} to some of the examples to reduce CMD CHECK computation time
+
+2012-02-01 version 0.9.0
+
+* Initial Release

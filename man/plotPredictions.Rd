@@ -1,0 +1,32 @@
+\name{plotPredictions}
+\alias{plotPredictions}
+\title{Plot Predicted versus Observed}
+\usage{
+  plotPredictions(x, show.equality = TRUE,
+    xlab = "Observed Value", ylab = "Predicted Value",
+    main = "Predicted vs Observed", ...)
+}
+\arguments{
+  \item{x}{an A3 object,}
+
+  \item{show.equality}{if true plot a line at 45-degrees.}
+
+  \item{xlab}{the x-axis label.}
+
+  \item{ylab}{the y-axis label.}
+
+  \item{main}{the plot title.}
+
+  \item{...}{additional options provided to the
+  \code{\link{plot}} function.}
+}
+\description{
+  Plots an 'A3' object's values showing the predicted
+  versus observed values for each observation.
+}
+\examples{
+data(multifunctionality)
+ x <- a3.lm(MUL ~ ., multifunctionality, p.acc = NULL, features = FALSE)
+ plotPredictions(x)
+}
+

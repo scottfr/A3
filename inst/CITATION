@@ -1,0 +1,16 @@
+citHeader("To cite package 'A3' in publications use:")
+
+year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date, perl = TRUE)
+vers <- paste("R package version", meta$Version)
+
+citEntry(entry="Manual",
+         title = "Accurate, Adaptable and Accessible Model Error Metrics",
+         author = personList(as.person("Scott Fortmann-Roe")),
+         year = year,
+         note = vers,
+         
+         textVersion =
+           paste("Scott Fortmann-Roe (",
+                 year,
+                 "). Accurate, Adaptable and Accessible Error Metrics for Predictive Models. ",
+                 vers, ".", sep=""))
